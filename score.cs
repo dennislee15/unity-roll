@@ -7,7 +7,7 @@ public class score : MonoBehaviour {
 
     public Text winText;
     public Text winText2;
-    public Text mainmenu;
+
     public playerController player1;
     public player2Controller player2;
     int maxScore = 42;
@@ -17,7 +17,6 @@ public class score : MonoBehaviour {
 	void Start () {
         winText.text = "";
         winText2.text = "";
-        mainmenu.text = "";
 	}
 	
 	// Update is called once per frame
@@ -40,8 +39,6 @@ public class score : MonoBehaviour {
                 winText.text = "Tie!";
                 winText2.text = "Tie!";
             }
-            mainmenu.text = "Return to Menu";
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 	}
 }

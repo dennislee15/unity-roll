@@ -50,19 +50,7 @@ public class player2Controller : MonoBehaviour
             col.gameObject.GetComponent<Rigidbody>().AddForce(total_horizontal, 0, total_vertical);
             //Destroy(col.gameObject);
         }
-        if (col.gameObject.name == "southWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "northWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "eastWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "westWall")
+        if (col.gameObject.tag == "Wall")
         {
             add_collision_force(col);
         }

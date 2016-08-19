@@ -21,20 +21,7 @@ public class objectCollision : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-
-        if (col.gameObject.name == "southWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "northWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "eastWall")
-        {
-            add_collision_force(col);
-        }
-        else if (col.gameObject.name == "westWall")
+        if (col.gameObject.tag == "Wall")
         {
             add_collision_force(col);
         }
